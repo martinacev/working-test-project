@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import styles from './header.module.css';
-import logo from '../../../public/final.png';
+import classes from './header.module.css';
+import logo from '/public/final.png';
 import dropdown from '../../assets/svg/dropdown.svg';
 
 const Header = () => {
@@ -23,26 +23,26 @@ const Header = () => {
     }, []);
 
     return (
-        <div className={styles.container}>
+        <div className={classes.container}>
             {isMobileView && (
                 <img 
-                    className={styles.dropdown} 
+                    className={classes.dropdown} 
                     src={dropdown} 
                     alt='dropdown' 
                     onClick={toggleMenu} 
                 />
             )}
-            <div className={styles.wrapper}>
-                <img className={styles.logo} src={logo} alt="logo" />
+            <div className={classes.wrapper}>
+                <img className={classes.logo} src={logo} alt="logo" />
                 <ul 
-                    className={styles.items} 
+                    className={classes.items} 
                     style={{ 
                         display: isMobileView && !isMenuOpen ? 'none' : 'flex' 
                     }}
                 >
                     {['Contact', 'About Us', 'Home', 'Gallery'].map((item, index) => (
-                        <li className={styles.item} key={index}>
-                            <a className={styles.link} href='#'>{item}</a>
+                        <li className={classes.item} key={index}>
+                            <a className={classes.link} href='#'>{item}</a>
                         </li>
                     ))}
                 </ul>
