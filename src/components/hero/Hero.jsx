@@ -9,6 +9,7 @@ const Hero = ({ title, subtitle }) => {
             <div className={classes.content}>
                 <h2 className={classes.title}>{title}</h2>
                 <p className={classes.subtitle}>{subtitle}</p>
+                <button>here</button>
             </div>
             <div className={classes.image}>
                <img className={classes.logo} src={logo} alt='car' />
