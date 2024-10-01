@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    padding: 0 200px;
+    
+}
+
+.content {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.title {
+    font-size: 35  px;
+    line-height: 1.1em;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+
+.subtitle {
+    font-size: 18px;
+     margin-top: 10px;
+    width: 100%;
+}
+
+.title,.subtitle {
+    max-width: 60%;
+}
+
+.image {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: center;
+}
