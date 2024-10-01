@@ -84,11 +84,23 @@
 
 @media (max-width: 480px) {
     .wrapper {
-        padding: 20px 20px;
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        align-items: start;
     }
     
+    .item {
+        display: flex;
+    }
+
     .items {
         display: flex; 
+        justify-content: start;
+        flex-direction: column;
+        padding: 0;
+        gap: 10px;
+        align-items: start;
     }
 
     .dropdown {
@@ -96,6 +108,6 @@
     }
 
     .logo {
-        width: 10%;
+        width: 12%;
     }
 }
